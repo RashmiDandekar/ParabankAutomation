@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="username" value="john" />
+		<parameter name="password" value="demo" />
+		<parameter name="payeeName" value="ash" />
+		<parameter name="payeeAddressStreet" value="street 1" />
+		<parameter name="payeeAddressCity" value="Mumbai" />
+		<parameter name="payeeAddressState" value="MH" />
+		<parameter name="payeeAddressZipcode" value="100" />
+		<parameter name="payeePhoneNumber" value="91243" />
+		<parameter name="amount" value="50" />
+		<classes>
+			<class name="tests.implementation.HomePageTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

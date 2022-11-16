@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 16.195 s <<< FAILURE! - in TestSuite
+verifyLoginWithCorrectCredentials(tests.implementation.HomePageTests)  Time elapsed: 1.589 s  <<< FAILURE!
+java.lang.AssertionError: expected [ParaBank | Accounts Overview] but found [ParaBank | Error]
+	at tests.implementation.HomePageTests.verifyLoginWithCorrectCredentials(HomePageTests.java:19)
+
+verifyOpeningOfCheckingAccount(tests.implementation.OpenAccountTests)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.parabank.pages.HomePage.loadOpenAccountPage()" because "this.homepage" is null
+	at tests.implementation.OpenAccountTests.verifyOpeningOfCheckingAccount(OpenAccountTests.java:11)
+
+verifyOpeningOfSavingAccount(tests.implementation.OpenAccountTests)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.parabank.pages.HomePage.loadOpenAccountPage()" because "this.homepage" is null
+	at tests.implementation.OpenAccountTests.verifyOpeningOfSavingAccount(OpenAccountTests.java:24)
+
+verifyBillPaymentAndBothAccountBalances(tests.implementation.BillPayTests)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.parabank.pages.HomePage.loadOpenAccountPage()" because "this.homepage" is null
+	at tests.implementation.BillPayTests.verifyBillPaymentAndBothAccountBalances(BillPayTests.java:14)
+
